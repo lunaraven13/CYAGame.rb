@@ -1,0 +1,51 @@
+puts "You enter the Glitterdome. Do you go through door #1, door #2 or door #3?"
+ 
+print "> "
+door = $stdin.gets.chomp
+ 
+if door == "1"
+  puts "There is rabbit with a hatchet. What do you do?"
+  puts "1. Back away slowly."
+  puts "2. Try to take the hatchet."
+ 
+  print "> "
+  rabbit = $stdin.gets.chomp
+ 
+  if rabbit == "1"
+    puts "The rabbit chops you in half. You're dead!"
+  elsif rabbit == "2"
+    puts "The rabbit cuts off your arms. You're dead!"
+  else
+    puts "Well, doing %s was a smart move. Rabbit drops hatchet and runs away."
+  end
+ 
+elsif door == "2"
+  puts "There are two more doors."
+  puts "1. Open door #1."
+  puts "2. Open door #2."
+ 
+  print "> "
+  glitter = $stdin.gets.chomp
+ 
+  if glitter == "1"
+  puts "1. The door into the throne room, you win!"
+  elsif glitter == "2"
+    puts "2. You have fallen into the oubliette! You remain a prisoner in the dark."
+  end
+ 
+elsif door == "3"
+  puts "There is a table with a cookie on a plate and a small glass of liquid."
+  puts "1. Eat the cookie."
+  puts "2. Drink the liquid."
+ 
+  print "> "
+  eat = $stdin.gets.chomp
+ 
+  if eat == "1"
+    puts "1. The cookie had nighshade, you're dead!"
+  elsif eat == "2"
+    puts "2. The liquid makes you hallucinate. Have fun!"
+    end
+ 
+    else puts "You stumble around, fall on a knife and die!"
+  end
